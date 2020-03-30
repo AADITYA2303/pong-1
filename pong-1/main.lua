@@ -20,12 +20,13 @@
     modern systems.
 ]]
 
--- push is a library that will allow us to draw our game at a virtual
+--[[ push is a library that will allow us to draw our game at a virtual
 -- resolution, instead of however large our window is; used to provide
 -- a more retro aesthetic
 --
 -- https://github.com/Ulydev/push
 push = require 'push'
+]]
 
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
@@ -51,10 +52,6 @@ function love.load()
     })
 end
 
---[[
-    Keyboard handling, called by LÖVE2D each frame; 
-    passes in the key we pressed so we can access.
-]]
 function love.keypressed(key)
     -- keys can be accessed by string name
     if key == 'escape' then
